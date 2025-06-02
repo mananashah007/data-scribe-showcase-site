@@ -1,6 +1,9 @@
+
 import { Card, CardContent } from "@/components/ui/card";
+
 const About = () => {
-  return <section id="about" className="py-20 bg-background">
+  return (
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
@@ -9,8 +12,12 @@ const About = () => {
             <div>
               <Card>
                 <CardContent className="p-8">
-                  <div className="w-48 h-48 mx-auto bg-muted rounded-full flex items-center justify-center mb-6">
-                    <span className="text-6xl"></span>
+                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
+                    <img 
+                      src="/lovable-uploads/1b516373-5bbd-4dfb-bdb8-921071d44aa1.png" 
+                      alt="Manan Shah - Data Scientist & Engineer"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -45,6 +52,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
