@@ -7,7 +7,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Hi, I'm <span className="text-primary">Manan Shah</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">Analytics and Data Science Professional | IIM Ahmedabad | Building Data-Driven Products</p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">Data Scientist & Analytics Consultant | IIM Ahmedabad | Building Data-Driven Solutions</p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">6+ years of experience across Financial Services, Pharma, FMCG, and Supply Chain domains. MBA from IIM Ahmedabad with expertise in data science, analytics, and data engineering.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in">
