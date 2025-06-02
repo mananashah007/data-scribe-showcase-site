@@ -1,9 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
@@ -13,11 +10,7 @@ const About = () => {
               <Card>
                 <CardContent className="p-8">
                   <div className="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6">
-                    <img 
-                      src="/lovable-uploads/1b516373-5bbd-4dfb-bdb8-921071d44aa1.png" 
-                      alt="Manan Shah - Data Scientist & Engineer"
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="/lovable-uploads/1b516373-5bbd-4dfb-bdb8-921071d44aa1.png" alt="Manan Shah - Data Scientist & Engineer" className="w-full h-full object-cover" />
                   </div>
                 </CardContent>
               </Card>
@@ -35,7 +28,7 @@ const About = () => {
 
               <div className="bg-blue-50 p-4 rounded-lg mb-6">
                 <h4 className="font-semibold text-primary mb-2">Current Goal</h4>
-                <p className="text-sm text-muted-foreground">Seeking Data Science or Product Analytics roles at product-first firms where I can leverage my technical expertise and business acumen to drive innovation.</p>
+                <p className="text-sm text-muted-foreground">Seeking Data Science, Data Engineering or Product Analytics roles at product-first firms where I can leverage my technical expertise and business acumen to drive innovation.</p>
               </div>
               
               <div className="grid grid-cols-2 gap-4 text-center">
@@ -52,8 +45,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
