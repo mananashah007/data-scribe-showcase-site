@@ -24,18 +24,11 @@ const About = () => {
                 from engineering to analytics to consulting, culminating in an MBA from IIM Ahmedabad.
               </p>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                I'm passionate about transforming complex data challenges into actionable business insights, 
-                building recommendation engines, developing NLP solutions, and creating robust data pipelines 
-                that drive measurable impact.
-              </p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">I'm passionate about transforming complex data challenges into actionable business insights, building recommendation engines, developing complex data driven solutions, and creating robust data pipelines that drive measurable impact.</p>
 
               <div className="bg-blue-50 p-4 rounded-lg mb-6">
                 <h4 className="font-semibold text-primary mb-2">Current Goal</h4>
-                <p className="text-sm text-muted-foreground">
-                  Seeking Data Engineering or Product Analytics roles at product-first firms where I can 
-                  leverage my technical expertise and business acumen to drive innovation.
-                </p>
+                <p className="text-sm text-muted-foreground">Seeking Data Science or Product Analytics roles at product-first firms where I can leverage my technical expertise and business acumen to drive innovation.</p>
               </div>
               
               <div className="grid grid-cols-2 gap-4 text-center">
