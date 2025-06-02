@@ -13,33 +13,42 @@ const About = () => {
               <Card>
                 <CardContent className="p-8">
                   <div className="w-48 h-48 mx-auto bg-muted rounded-full flex items-center justify-center mb-6">
-                    <span className="text-6xl">👤</span>
+                    <span className="text-6xl">👨‍💼</span>
                   </div>
                 </CardContent>
               </Card>
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Hello! I'm a passionate developer</h3>
+              <h3 className="text-2xl font-semibold mb-4">Data Scientist & Engineer from IIM Ahmedabad</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                With over X years of experience in software development, I specialize in creating 
-                robust, scalable applications using modern technologies. I'm passionate about 
-                clean code, user experience, and continuous learning.
+                With 6+ years of experience across Financial Services, Pharma, FMCG, and Supply Chain domains, 
+                I specialize in building data-driven products and scalable analytics solutions. My journey spans 
+                from engineering to analytics to consulting, culminating in an MBA from IIM Ahmedabad.
               </p>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community.
+                I'm passionate about transforming complex data challenges into actionable business insights, 
+                building recommendation engines, developing NLP solutions, and creating robust data pipelines 
+                that drive measurable impact.
               </p>
+
+              <div className="bg-blue-50 p-4 rounded-lg mb-6">
+                <h4 className="font-semibold text-primary mb-2">Current Goal</h4>
+                <p className="text-sm text-muted-foreground">
+                  Seeking Data Engineering or Product Analytics roles at product-first firms where I can 
+                  leverage my technical expertise and business acumen to drive innovation.
+                </p>
+              </div>
               
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div>
-                  <h4 className="text-2xl font-bold text-primary">X+</h4>
-                  <p className="text-muted-foreground">Projects</p>
+                  <h4 className="text-2xl font-bold text-primary">6+</h4>
+                  <p className="text-muted-foreground">Years Experience</p>
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-primary">X+</h4>
-                  <p className="text-muted-foreground">Years Experience</p>
+                  <h4 className="text-2xl font-bold text-primary">4</h4>
+                  <p className="text-muted-foreground">Industry Domains</p>
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Your Name</h1>
+        <h1 className="text-2xl font-bold">Manan Shah</h1>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
@@ -25,7 +25,7 @@ const Navigation = () => {
           <button onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">About</button>
           <button onClick={() => scrollToSection('skills')} className="hover:text-primary transition-colors">Skills</button>
           <button onClick={() => scrollToSection('projects')} className="hover:text-primary transition-colors">Projects</button>
-          <button onClick={() => scrollToSection('experience')} className="hover:text-primary transition-colors">Experience</button>
+          <button onClick={() => scrollToSection('experience')} className="hover:text-primary transition-colors">Resume</button>
           <button onClick={() => scrollToSection('contact')} className="hover:text-primary transition-colors">Contact</button>
         </div>
 
@@ -48,7 +48,7 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('about')} className="text-left hover:text-primary transition-colors">About</button>
             <button onClick={() => scrollToSection('skills')} className="text-left hover:text-primary transition-colors">Skills</button>
             <button onClick={() => scrollToSection('projects')} className="text-left hover:text-primary transition-colors">Projects</button>
-            <button onClick={() => scrollToSection('experience')} className="text-left hover:text-primary transition-colors">Experience</button>
+            <button onClick={() => scrollToSection('experience')} className="text-left hover:text-primary transition-colors">Resume</button>
             <button onClick={() => scrollToSection('contact')} className="text-left hover:text-primary transition-colors">Contact</button>
           </div>
         </div>

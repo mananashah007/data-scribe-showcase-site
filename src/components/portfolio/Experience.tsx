@@ -1,65 +1,93 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, MapPin, Award, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Company",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Led development of key features for a SaaS platform serving 10k+ users. Mentored junior developers and implemented best practices for code quality.",
+      title: "Data Scientist & Analytics Consultant",
+      company: "Various Consulting Projects",
+      location: "India",
+      period: "2020 - 2024",
+      description: "Led data science initiatives across Financial Services, Pharma, FMCG, and Supply Chain domains. Developed ML models, recommendation engines, and analytics dashboards.",
       achievements: [
-        "Reduced application load time by 40%",
-        "Led a team of 5 developers",
-        "Implemented CI/CD pipeline"
+        "Built recommendation systems increasing sales by 15%",
+        "Implemented NLP chatbot analytics reducing response time by 40%",
+        "Created inventory management systems improving accuracy by 25%"
       ]
     },
     {
-      title: "Full Stack Developer",
-      company: "Startup Inc",
-      location: "Remote",
-      period: "2020 - 2022",
-      description: "Built and maintained web applications using modern frameworks. Collaborated with cross-functional teams to deliver high-quality products.",
+      title: "Data Engineer & Analytics Lead",
+      company: "Enterprise Consulting",
+      location: "India",
+      period: "2018 - 2020",
+      description: "Focused on data engineering pipelines, ETL processes, and business intelligence solutions. Led cross-functional teams in implementing data-driven decision making.",
       achievements: [
-        "Developed 3 major product features",
-        "Improved test coverage to 85%",
-        "Optimized database queries"
-      ]
-    },
-    {
-      title: "Junior Developer",
-      company: "Digital Agency",
-      location: "New York, NY",
-      period: "2019 - 2020",
-      description: "Worked on client projects ranging from small business websites to complex web applications. Gained experience in multiple technologies.",
-      achievements: [
-        "Delivered 15+ client projects",
-        "Learned 5 new technologies",
-        "Received excellent client feedback"
+        "Designed scalable ETL pipelines processing 10TB+ daily data",
+        "Led team of 5 data engineers and analysts",
+        "Implemented A/B testing framework improving user engagement by 20%"
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University Name",
-      location: "City, State",
-      period: "2015 - 2019",
-      description: "Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems"
+      degree: "Master of Business Administration (MBA)",
+      school: "Indian Institute of Management (IIM) Ahmedabad",
+      location: "Ahmedabad, India",
+      period: "2022 - 2024",
+      description: "Specialized in Analytics and Strategy. Recipient of IIMA Analytical Excellence Award."
+    },
+    {
+      degree: "Bachelor of Technology in Computer Engineering",
+      school: "Gujarat Technological University",
+      location: "Gujarat, India", 
+      period: "2014 - 2018",
+      description: "Relevant coursework: Data Structures, Algorithms, Database Systems, Machine Learning"
     }
+  ];
+
+  const certifications = [
+    { name: "Stanford Machine Learning", provider: "Stanford University", year: "2023" },
+    { name: "Databricks Spark Certification", provider: "Databricks", year: "2023" },
+    { name: "Google Generative AI", provider: "Google", year: "2024" },
+    { name: "Deep Learning Specialization", provider: "Coursera", year: "2022" }
+  ];
+
+  const awards = [
+    { name: "IIMA Analytical Excellence Award", organization: "IIM Ahmedabad", year: "2024" },
+    { name: "Best Upcoming Consultant", organization: "Industry Recognition", year: "2023" },
+    { name: "Kaizen Award for Process Excellence", organization: "Previous Organization", year: "2021" }
   ];
 
   return (
     <section id="experience" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Experience & Education</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Experience & Credentials</h2>
           
           <div className="space-y-12">
+            {/* Resume Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Resume / CV</h3>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Download Complete Resume</CardTitle>
+                  <CardDescription>
+                    Get the detailed PDF version of my resume with complete work history and achievements.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button className="w-full md:w-auto">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume PDF
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
             {/* Experience Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-6">Work Experience</h3>
@@ -130,6 +158,48 @@ const Experience = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{edu.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Certifications Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {certifications.map((cert, index) => (
+                  <Card key={index} className="hover:shadow-md transition-shadow">
+                    <CardContent className="p-4">
+                      <div className="flex items-center gap-3">
+                        <Award className="h-8 w-8 text-primary" />
+                        <div>
+                          <h4 className="font-semibold">{cert.name}</h4>
+                          <p className="text-sm text-muted-foreground">{cert.provider} • {cert.year}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Awards Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Awards & Recognition</h3>
+              <div className="space-y-4">
+                {awards.map((award, index) => (
+                  <Card key={index} className="hover:shadow-md transition-shadow">
+                    <CardContent className="p-4">
+                      <div className="flex items-center gap-3">
+                        <Badge variant="outline" className="p-2">
+                          <Award className="h-4 w-4" />
+                        </Badge>
+                        <div>
+                          <h4 className="font-semibold">{award.name}</h4>
+                          <p className="text-sm text-muted-foreground">{award.organization} • {award.year}</p>
+                        </div>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}

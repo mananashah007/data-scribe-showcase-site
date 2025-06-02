@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone, Github, Linkedin, Download } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,35 +41,62 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always interested in new opportunities and collaborations. 
-                Whether you have a project in mind or just want to chat about technology, 
-                feel free to reach out!
+                I'm actively seeking Data Engineering or Product Analytics roles at product-first firms. 
+                Whether you're a recruiter, hiring manager, or just want to discuss data science and analytics, 
+                I'd love to connect!
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span>your.email@example.com</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <span>+1 (555) 123-4567</span>
+                  <a href="mailto:x24manans@iima.ac.in" className="hover:text-primary transition-colors">
+                    x24manans@iima.ac.in
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span>Your City, State</span>
+                  <span>India (Open to relocation)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Linkedin className="h-5 w-5 text-primary" />
+                  <a 
+                    href="https://www.linkedin.com/in/mananshah096/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    linkedin.com/in/mananshah096
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Github className="h-5 w-5 text-primary" />
+                  <a 
+                    href="https://github.com/mananashah007" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    github.com/mananashah007
+                  </a>
                 </div>
               </div>
               
-              <div className="flex gap-4 mt-8">
-                <Button variant="outline" size="icon">
-                  <Github className="h-5 w-5" />
+              <div className="space-y-4">
+                <Button variant="outline" className="w-full justify-start" asChild>
+                  <a href="https://github.com/mananashah007" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-5 w-5" />
+                    View GitHub Profile
+                  </a>
                 </Button>
-                <Button variant="outline" size="icon">
-                  <Linkedin className="h-5 w-5" />
+                <Button variant="outline" className="w-full justify-start" asChild>
+                  <a href="https://www.linkedin.com/in/mananshah096/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="mr-2 h-5 w-5" />
+                    Connect on LinkedIn
+                  </a>
                 </Button>
-                <Button variant="outline" size="icon">
-                  <Mail className="h-5 w-5" />
+                <Button variant="outline" className="w-full justify-start">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download vCard
                 </Button>
               </div>
             </div>
@@ -79,13 +106,13 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Send me a message</CardTitle>
                 <CardDescription>
-                  I'll get back to you as soon as possible
+                  I'll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -97,7 +124,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">Email *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -110,13 +137,13 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Message *</Label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your project or just say hi!"
+                      placeholder="Tell me about the opportunity or just say hi!"
                       rows={5}
                       required
                     />

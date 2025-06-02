@@ -5,20 +5,28 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Vue.js", "HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Next.js"]
+      title: "Programming & Data",
+      skills: ["Python", "SQL", "R", "Spark", "PySpark", "Pandas", "NumPy", "Scikit-learn"]
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Python", "Express.js", "Django", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL"]
+      title: "Analytics & ML",
+      skills: ["Machine Learning", "Deep Learning", "NLP", "A/B Testing", "Statistical Analysis", "Predictive Modeling", "Time Series", "Recommendation Systems"]
     },
     {
-      title: "Tools & Technologies",
-      skills: ["Git", "Docker", "AWS", "Firebase", "Vercel", "Figma", "VS Code", "Linux"]
+      title: "Data Engineering",
+      skills: ["Apache Spark", "ETL Pipelines", "Data Warehousing", "Databricks", "Azure", "AWS", "Snowflake", "Data Lakes"]
     },
     {
-      title: "Soft Skills",
-      skills: ["Problem Solving", "Team Leadership", "Communication", "Project Management", "Agile", "Mentoring"]
+      title: "Visualization & BI",
+      skills: ["Power BI", "Tableau", "Matplotlib", "Seaborn", "Plotly", "Excel", "Google Analytics", "Dashboard Design"]
+    },
+    {
+      title: "Databases & Tools",
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "Git", "Docker", "Jupyter", "VS Code", "Linux"]
+    },
+    {
+      title: "Business & Leadership",
+      skills: ["Product Analytics", "Strategy Consulting", "Team Leadership", "Stakeholder Management", "Business Intelligence", "Process Optimization"]
     }
   ];
 
@@ -28,7 +36,7 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Skills & Technologies</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
