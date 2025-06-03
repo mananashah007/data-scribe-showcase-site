@@ -17,7 +17,7 @@ const About = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Data Scientist & Engineer from IIM Ahmedabad</h3>
+              <h3 className="text-2xl font-semibold mb-4">Data Scientist &amp; an MBA from IIM Ahmedabad</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 With 6+ years of experience across Financial Services, Pharma, FMCG, and Supply Chain domains, 
                 I specialize in building data-driven products and scalable analytics solutions. My journey spans 
