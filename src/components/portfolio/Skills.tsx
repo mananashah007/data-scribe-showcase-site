@@ -6,23 +6,23 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming & Data",
-      skills: ["Python", "SQL", "R", "Spark", "PySpark", "Pandas", "NumPy", "Scikit-learn"]
+      skills: ["Python", "SQL", "PySpark", "Pandas", "NumPy", "Scikit-learn"]
     },
     {
       title: "Analytics & ML",
-      skills: ["Machine Learning", "Deep Learning", "NLP", "A/B Testing", "Statistical Analysis", "Predictive Modeling", "Time Series", "Recommendation Systems"]
+      skills: ["Machine Learning", "Generative AI", "NLP", "A/B Testing", "Statistical Analysis", "Predictive Modeling", "Time Series", "Recommendation Systems"]
     },
     {
       title: "Data Engineering",
-      skills: ["Apache Spark", "ETL Pipelines", "Data Warehousing", "Databricks", "Azure", "AWS", "Snowflake", "Data Lakes"]
+      skills: ["Apache Spark", "ETL Pipelines", "Data Warehousing", "Databricks", "Azure"]
     },
     {
       title: "Visualization & BI",
-      skills: ["Power BI", "Tableau", "Matplotlib", "Seaborn", "Plotly", "Excel", "Google Analytics", "Dashboard Design"]
+      skills: ["Power BI", "Matplotlib", "Seaborn", "Plotly", "Excel", "Dashboard Design"]
     },
     {
       title: "Databases & Tools",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Git", "Docker", "Jupyter", "VS Code", "Linux"]
+      skills: ["MySQL", "PostgreSQL", "Git", "Jupyter", "VS Code"]
     },
     {
       title: "Business & Leadership",
