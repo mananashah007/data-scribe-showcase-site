@@ -1,73 +1,64 @@
-# Welcome to my Lovable project
+# 🌐 Manan Shah – Personal Portfolio Website
 
-## Project info
+Welcome to the source code for my personal portfolio website, built using [Lovable](https://lovable.dev). This site showcases my professional journey as a Data Scientist, Data Engineer, and MBA graduate from IIM Ahmedabad.
 
-**URL**: https://lovable.dev/projects/2a9aabef-6c1a-4c48-a4f4-2e7e4595e366
+## 🚀 Live Website
 
-## How can I edit this code?
+👉 **[Visit My Portfolio](https://lovable.dev/projects/2a9aabef-6c1a-4c48-a4f4-2e7e4595e366)**
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📄 About the Project
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2a9aabef-6c1a-4c48-a4f4-2e7e4595e366) and start prompting.
+This portfolio is designed to:
+- Showcase my experience across domains like Financial Services, Pharma, CPG, and Supply Chain.
+- Highlight data projects involving ETL, NLP, Dashboards, ML, and Product Analytics.
+- Present my resume, certifications, and achievements in a structured and SEO-friendly format.
+- Serve as a point of contact for recruiters and collaborators.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🧠 Key Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Homepage** with a professional summary and quick navigation
+- **About Me** section outlining my career journey
+- **Projects Gallery** with detailed descriptions and business impact
+- **Resume Viewer** with download option
+- **Certifications & Awards** page
+- **Contact Form** with direct links to LinkedIn, GitHub, and Email
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## 🛠️ Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Vite](https://vitejs.dev/) – for blazing-fast build and dev environment
+- [React](https://reactjs.org/) – frontend framework
+- [TypeScript](https://www.typescriptlang.org/) – typed JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) – for modern utility-first styling
+- [shadcn/ui](https://ui.shadcn.com/) – for accessible and beautiful UI components
+- [Lovable](https://lovable.dev/) – for low-code AI-driven UI building and deployment
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/2a9aabef-6c1a-4c48-a4f4-2e7e4595e366) and click on Share -> Publish.
+## ✍️ How to Edit This Site
 
-## Can I connect a custom domain to my Lovable project?
+### Option 1: Use [Lovable](https://lovable.dev/projects/2a9aabef-6c1a-4c48-a4f4-2e7e4595e366)
 
-Yes, you can!
+Make changes directly using Lovable's prompt-based editor. All updates will be automatically committed to the linked GitHub repo.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Option 2: Clone and Edit Locally
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the folder
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install dependencies
+npm install
+
+# Step 4: Run the local dev server
+npm run dev
