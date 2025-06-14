@@ -1,4 +1,3 @@
-
 import { WorkExperience, Education, Certification, Award } from './types';
 
 export const experiences: WorkExperience[] = [
@@ -48,7 +47,7 @@ export const experiences: WorkExperience[] = [
     company: "Zycus Infotech",
     location: "Mumbai, India",
     period: "Aug 2018 – Apr 2019",
-    logo: "/lovable-uploads/10b3dbca-6a04-4b84-825a-062ad1a6e3.png",
+    logo: "/lovable-uploads/9f0fae67-97b6-423f-8b75-c6180c766d56.png",
     description: "Cleaned, standardized, and analyzed procurement data across multiple ERPs to deliver insights on supplier performance.",
     achievements: [
       "Conducted UAT (User Acceptance Testing) for product releases, reducing post-launch issues by 40% and improving data reliability"
