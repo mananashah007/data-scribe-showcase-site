@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
@@ -12,7 +13,21 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="fade-in">
+          <div className="fade-in flex flex-col items-center">
+            {/* Profile Image */}
+            <div className="mb-8">
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-white shadow-2xl hover-lift">
+                <AvatarImage 
+                  src="/lovable-uploads/1b516373-5bbd-4dfb-bdb8-921071d44aa1.png" 
+                  alt="Manan Shah"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                  MS
+                </AvatarFallback>
+              </Avatar>
+            </div>
+
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
               Hi, I'm <span className="gradient-text">Manan Shah</span>
             </h1>
