@@ -11,6 +11,7 @@ const Experience = () => {
       company: "Sun Pharmaceuticals",
       location: "Mumbai, India",
       period: "Apr 2025 – Present",
+      logo: "/lovable-uploads/c6bde0b5-adcd-42f6-b324-c5c485aed9fa.png",
       description: "Spearheaded the development and automation of data pipelines to streamline sales operations across geographies.",
       achievements: [
         "Designed and deployed Power BI dashboards enabling real-time, data-driven decision-making for the field sales force",
@@ -22,6 +23,7 @@ const Experience = () => {
       company: "Ernst & Young (EY)",
       location: "Bengaluru, India",
       period: "Aug 2023 – Mar 2024",
+      logo: "/lovable-uploads/9939d59f-fdb8-415e-b94c-dbe5dbe87374.png",
       description: "Led the product analytics workstream using Adobe Analytics to map user journeys, identify friction points, and optimize mobile app experience.",
       achievements: [
         "Designed and analyzed A/B tests for product feature rollouts, driving a measurable uplift in user engagement",
@@ -34,6 +36,7 @@ const Experience = () => {
       company: "Fractal Analytics",
       location: "Mumbai, India",
       period: "Apr 2019 – Aug 2023",
+      logo: "/lovable-uploads/285048cb-e08b-48fe-8324-bf24657f54ed.png",
       description: "Built data-driven solutions and recommendation systems for FMCG, e-commerce, and CPG clients across multiple geographies.",
       achievements: [
         "Built a personalized recommendation engine for an Indian FMCG firm, resulting in 2.5% incremental sales growth in Q2 2023",
@@ -49,6 +52,7 @@ const Experience = () => {
       company: "Zycus Infotech",
       location: "Mumbai, India",
       period: "Aug 2018 – Apr 2019",
+      logo: "/lovable-uploads/10b3dbca-6a04-4b84-825a-062ad1a6e3.png",
       description: "Cleaned, standardized, and analyzed procurement data across multiple ERPs to deliver insights on supplier performance.",
       achievements: [
         "Conducted UAT (User Acceptance Testing) for product releases, reducing post-launch issues by 40% and improving data reliability"
@@ -120,12 +124,21 @@ const Experience = () => {
                 {experiences.map((exp, index) => (
                   <Card key={index}>
                     <CardHeader>
-                      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                        <div>
-                          <CardTitle className="text-xl">{exp.title}</CardTitle>
-                          <CardDescription className="text-lg font-medium text-primary">
-                            {exp.company}
-                          </CardDescription>
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                        <div className="flex items-start gap-4 flex-1">
+                          <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center shadow-sm border">
+                            <img 
+                              src={exp.logo} 
+                              alt={`${exp.company} logo`} 
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <CardTitle className="text-xl">{exp.title}</CardTitle>
+                            <CardDescription className="text-lg font-medium text-primary">
+                              {exp.company}
+                            </CardDescription>
+                          </div>
                         </div>
                         <div className="flex flex-col md:items-end gap-1">
                           <div className="flex items-center text-sm text-muted-foreground">
