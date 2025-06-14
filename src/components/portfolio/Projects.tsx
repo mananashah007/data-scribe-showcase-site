@@ -1,36 +1,31 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, TrendingUp } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
       title: "E-commerce Recommendation Engine",
-      description: "Built a collaborative filtering recommendation system that increased sales conversion by 15% and average order value by 12%. Implemented using Python, Spark, and deployed on Azure cloud infrastructure.",
+      description: "Decoded the search rank algorithm of major ecommerce retailers to help the client understand the optimize their bidding for keywords and digital advertising campaign and calculate its ROI.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       technologies: ["Python", "Apache Spark", "Collaborative Filtering", "Azure", "SQL"],
       impact: "15% increase in sales conversion",
       metrics: [
         { label: "Sales Uplift", value: "15%" },
         { label: "AOV Growth", value: "12%" }
-      ],
-      githubUrl: "#",
-      demoUrl: "#"
+      ]
     },
     {
       title: "NLP Chatbot Analysis Platform",
-      description: "Developed an intelligent chatbot analytics system using NLP techniques to analyze customer interactions, sentiment analysis, and automated response optimization. Reduced response time by 40%.",
+      description: "Created a GenAI based chatbot for customer servicing department to help them address customer queries efficiently",
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
       technologies: ["Python", "NLP", "NLTK", "Transformers", "Flask", "PostgreSQL"],
       impact: "40% reduction in response time",
       metrics: [
         { label: "Response Time", value: "-40%" },
         { label: "Resolution Rate", value: "+25%" }
-      ],
-      githubUrl: "#",
-      demoUrl: "#"
+      ]
     },
     {
       title: "Supply Chain Inventory Dashboard",
@@ -41,9 +36,7 @@ const Projects = () => {
       metrics: [
         { label: "Accuracy", value: "+25%" },
         { label: "Cost Savings", value: "$1.2M" }
-      ],
-      githubUrl: "#",
-      demoUrl: "#"
+      ]
     },
     {
       title: "A/B Testing & User Experience Analysis",
@@ -54,9 +47,7 @@ const Projects = () => {
       metrics: [
         { label: "Engagement", value: "+20%" },
         { label: "Conversion", value: "+18%" }
-      ],
-      githubUrl: "#",
-      demoUrl: "#"
+      ]
     }
   ];
 
@@ -123,22 +114,6 @@ const Projects = () => {
                         </Badge>
                       ))}
                     </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3 pt-2">
-                    <Button size="sm" variant="outline" className="flex-1 hover:bg-gray-50" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </a>
-                    </Button>
-                    <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" asChild>
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
-                      </a>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
