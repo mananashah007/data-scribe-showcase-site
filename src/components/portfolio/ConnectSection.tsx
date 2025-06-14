@@ -31,8 +31,7 @@ const ConnectSection = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 h-auto hover-lift"
+              className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 h-auto shadow-lg hover-lift"
               asChild
             >
               <a href="mailto:x24manans@iima.ac.in">
